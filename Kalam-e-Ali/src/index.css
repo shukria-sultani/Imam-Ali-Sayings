@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Mj_Ramollah';
+  src: local('Mj_Ramollah'),
+       url('/fonts/Mj_Ramollah_0.ttf') format('truetype'); 
+  font-display: swap; 
+}
+@font-face {
+  font-family: 'MRT_3';
+  src: local('MRT_3'),
+       url('/fonts/MRT_3.ttf') format('truetype'); 
+  font-display: swap; 
+}
+
+.hero-container {
+  background-image: url("/images/hero.jpeg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+.hero-title {
+  font-family: "Mj_Ramollah"; 
+  color: #40C057; 
+}
+.welcome-message{
+    font-family: "Mj_Ramollah"; 
+}
+.welcome-message span{
+  color: #40C057;
+}
+.hero-span{
+  font-family: "MRT_3";
+  font-size:   x-large;
+}
+.hero-hekmat{
+  font-family: "MRT_3" ;
+  font-size: x-large;
+ background-color: rgba(237, 194, 95, 0.5); 
+box-shadow: 2px 2px 4px rgba(58, 187, 82, 0.8); 
+}
