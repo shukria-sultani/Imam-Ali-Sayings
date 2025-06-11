@@ -1,6 +1,14 @@
+@font-face {
+  font-family: 'MRT_3';
+  src: local('MRT_3'),
+       url('/fonts/MRT_3.ttf') format('truetype'); 
+  font-display: swap; 
+}
+
 * {
   padding: 0;
   margin: 0;
+  font-family: "MRT_3";
 }
 
 @font-face {
@@ -9,12 +17,7 @@
        url('/fonts/Mj_Ramollah_0.ttf') format('truetype'); 
   font-display: swap; 
 }
-@font-face {
-  font-family: 'MRT_3';
-  src: local('MRT_3'),
-       url('/fonts/MRT_3.ttf') format('truetype'); 
-  font-display: swap; 
-}
+
 
 .hero-container {
   background-image: url("/images/hero.jpeg"); 
@@ -33,14 +36,15 @@
 }
 .welcome-message span{
   color: #40C057;
+  font-family: "Mj_Ramollah"; 
 }
 .hero-span{
   font-family: "MRT_3";
-  font-size:   x-large;
+  font-size:   xx-large;
 }
 .hero-hekmat{
   font-family: "MRT_3" ;
-  font-size: x-large;
+  font-size: xx-large;
  background-color: rgba(237, 194, 95, 0.5); 
-box-shadow: 2px 2px 4px rgba(58, 187, 82, 0.8); 
+box-shadow: 4px 4px 6px rgba(58, 187, 82, 0.8); 
 }
