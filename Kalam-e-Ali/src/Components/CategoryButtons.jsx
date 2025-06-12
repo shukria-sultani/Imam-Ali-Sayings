@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import CategoryDropdown from "./CategoryDropdown";
 
 export default function CategoryButtons() {
   const inactiveStyle = {
@@ -25,7 +26,7 @@ export default function CategoryButtons() {
 
   return (
     <>
-      <div className="container category-buttons mt-5  pt-5 d-flex flex-row gap-2 ">
+      <div className="container w-100 category-buttons mt-5  pt-5 d-flex flex-row gap-2 ">
         <button
           className="btn p-2 ps-lg-5  ms-sm-3 pe-lg-5 ps-sm-3 pe-sm-5 btn-lg "
           onClick={() => handleCategroyClick("نامه ها")}
@@ -47,6 +48,11 @@ export default function CategoryButtons() {
         >
           حکمت ها
         </button>
+        <div className="dropdown">
+           <CategoryDropdown></CategoryDropdown>
+          
+        </div>
+   
       </div>
     </>
   );
