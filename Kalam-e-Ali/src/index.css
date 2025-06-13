@@ -2,6 +2,7 @@
   font-family: "MRT_3";
   src: local("MRT_3"), url("/fonts/MRT_3.ttf") format("truetype");
   font-display: swap;
+  
 }
 
 * {
@@ -58,4 +59,16 @@
 }
 .select-container select option{
   font-size: large;
+}
+.content{
+  border: 3px solid #40c057;
+}
+.kalam-category{
+  color: #40c057;
+
+}
+
+.footer h1{
+  font-family: "Mj_Ramollah";
+  color: #40c057;
 }
