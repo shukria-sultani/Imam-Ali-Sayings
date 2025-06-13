@@ -9,6 +9,7 @@
   padding: 0;
   margin: 0;
   font-family: "MRT_3";
+ 
 }
 
 @font-face {
@@ -62,6 +63,7 @@
 }
 .content{
   border: 3px solid #40c057;
+  background-color:  #f7edd7;
 }
 .kalam-category{
   color: #40c057;
