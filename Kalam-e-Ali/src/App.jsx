@@ -59,8 +59,16 @@ function App() {
   return (
     <>
       <Hero></Hero>
-      <CategoryButtons activeCategory={activeCategory} onCategoryClick={changeCategory}></CategoryButtons>
-      <ContentNavigator></ContentNavigator>
+      <CategoryButtons
+        activeCategory={activeCategory}
+        onCategoryClick={changeCategory}
+      ></CategoryButtons>
+      <ContentNavigator
+        currentNumber={currentContentIndex + 1}
+        totalNumber={currentContentList.length}
+        onNext={handleNext}
+        onBack={handleBack}
+      ></ContentNavigator>
       <Content></Content>
       <Footer></Footer>
     </>
