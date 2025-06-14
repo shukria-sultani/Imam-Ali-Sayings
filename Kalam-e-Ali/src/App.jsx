@@ -41,13 +41,15 @@ function App() {
     setCurrentContentIndex(0);
   }
   function handleNext() {
-    setCurrentContentIndex((prevIndex) =>
-      prevIndex < currentContentList.length - 1 ? prevIndex + 1 : prevIndex
+    setCurrentContentIndex((prevIndex) =>{
+    return prevIndex < currentContentList.length - 1 ? prevIndex + 1 : prevIndex
+
+    }
     );
   }
   function handleBack() {
     setCurrentContentIndex((prevIndex) => {
-      prevIndex > 0 ? prevIndex - 1 : prevIndex;
+     return  prevIndex > 0 ? prevIndex - 1 : prevIndex;
     });
   }
 
@@ -64,12 +66,12 @@ function App() {
         onCategoryClick={changeCategory}
       ></CategoryButtons>
       <ContentNavigator
-        currentNumber={currentContentIndex + 1}
+        currentNumber={currentContentIndex}
         totalNumber={currentContentList.length}
         onNext={handleNext}
         onBack={handleBack}
       ></ContentNavigator>
-      <Content></Content>
+      <Content itemData={displayedContent}></Content>
       <Footer></Footer>
     </>
   );
