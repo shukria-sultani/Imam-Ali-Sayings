@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CategoryDropdown from "./CategoryDropdown";
 
-export default function CategoryButtons() {
+export default function CategoryButtons({activeCategory, onCategoryClick }) {
   const inactiveStyle = {
     backgroundColor: "#FFC236",
     boxShadow: " 4px 4px 6px rgba(58, 187, 82, 0.7)",
@@ -18,11 +18,11 @@ export default function CategoryButtons() {
     transition: "2s",
   };
 
-  let [activeCategory, setActiveCategory] = useState(null);
+  // let [activeCategory, setActiveCategory] = useState(null);
 
-  function handleCategoryClick(category) { 
-    setActiveCategory(category);
-  }
+  // function onCategoryClick(category) { 
+  //   setActiveCategory(category);
+  // }
 
   return (
     <>
@@ -32,21 +32,21 @@ export default function CategoryButtons() {
            
             <button
               className="btn btn-lg ps-3 pe-3 ps-md-4 pe-md-4"
-              onClick={() => handleCategoryClick("خطبه ها")}
+              onClick={() => onCategoryClick("خطبه ها")}
               style={activeCategory === "خطبه ها" ? activeStyle : inactiveStyle}
             >
               خطبه ها{" "}
             </button>
              <button
               className="btn btn-lg p-2 ps-3 pe-3 ps-md-4 pe-md-4"
-              onClick={() => handleCategoryClick("نامه ها")}
+              onClick={() => onCategoryClick("نامه ها")}
               style={activeCategory === "نامه ها" ? activeStyle : inactiveStyle}
             >
               نامه ها
             </button>
             <button
               className="btn btn-lg ps-3 pe-3 ps-md-4 pe-md-4"
-              onClick={() => handleCategoryClick("حکمت ها")}
+              onClick={() => onCategoryClick("حکمت ها")}
               style={activeCategory === "حکمت ها" ? activeStyle : inactiveStyle}
             >
               حکمت ها
