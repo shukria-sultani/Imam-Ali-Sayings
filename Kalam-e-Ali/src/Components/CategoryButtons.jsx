@@ -53,10 +53,6 @@ export default function CategoryButtons({activeCategory, onCategoryClick }) {
             </button>
           </div>
 
-          <div className="dropdown">
-            <CategoryDropdown></CategoryDropdown>
-          </div>
-
         </div>
       </div>
     </>
