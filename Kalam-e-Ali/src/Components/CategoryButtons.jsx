@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CategoryDropdown from "./CategoryDropdown";
+
 
 export default function CategoryButtons({activeCategory, onCategoryClick }) {
   const inactiveStyle = {
