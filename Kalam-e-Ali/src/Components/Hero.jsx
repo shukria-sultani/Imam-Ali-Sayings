@@ -10,7 +10,9 @@ export default function Hero() {
             به <span>کلام علی</span> خوش آمدید
           </h2>
           <span className="hero-span text-center">
-            با مطالعه نهج البلاغه از مطالعه ده ها کتاب دیگر بی نیاز شوید!
+               در  <span>کلام علی</span> برگزیده های نهج البلاغه را مطالعه نمایید.<br />
+            با مطالعه نهج البلاغه از مطالعه ده ها کتاب دیگر بی نیاز شوید! 
+         
           </span>
         </div>
         <div className="row justify-content-center ps-3 pe-3">
