@@ -1,7 +1,7 @@
 [build]
 base = "Kalam-e-Ali"
 command = "npm run build"
-publish = "Kalam-e-Ali/dist" # This path is relative to the *repository root*
+publish = "dist" # This path is relative to the *repository root*
 
 [[redirects]]
 from = "/*"
